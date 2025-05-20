@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello InscriptionsController!{% endblock %}
+
+{% block body %}
+    <main>
+        <section>
+            <div class="text-center my-3">
+                <h1 class="text-uppercase fs-1 text-primary fw-semibold">Inscription</h1>
+            </div>
+            <div class="col-8 m-auto">
+                <form action="" method="post">
+                    <div>
+                        <label class="form-label fs-2 my-3" for="lastname">Lastname</label>
+                        <input class="form-control fs-3" type="text" id="lastname" name="lastname" placeholder="Enter your lastname">
+                    </div>
+                    <div>
+                        <label class="form-label fs-2 my-3" for="firstname">Firstname</label>
+                        <input class="form-control fs-3" type="text" id="firstname" name="firstname" placeholder="Enter your firstname">
+                    </div>
+                    <div>
+                        <label class="form-label fs-2 my-3" for="email">Email</label>
+                        <input class="form-control fs-3" type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label class="form-label fs-2 my-3" for="password">Password</label>
+                        <input class="form-control fs-3" type="password" id="password" name="password" placeholder="Enter your your pass***">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="gpdr" name="gpdr">
+                        <label class="form-label fs-3 my-3" for="gpdr">J'accèptes les conditions d'utilisations</label>
+                    </div>
+                    <div class="text-center my-3">
+                        <button type="submit" class="btn btn-primary fs-3">Inscription</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+{% endblock %}
